@@ -3,7 +3,7 @@ from fastapi import FastAPI
 app = FastAPI()
 
 
-@app.post("/")
+@app.get("/")
 def read_root():
     dict = {"Hello" : "World"}
     return dict["Hello"]
